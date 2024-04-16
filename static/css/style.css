@@ -8,11 +8,11 @@
 }
 
 :root {
-  --bg-color: #12141c;
-  --text-color: #fff;
+  --bg-color: #ffffff;
+  --text-color: #363636;
   --main-color: #eb4a4a;
-  --second-color: gray;
-  --other-color: #020312;
+  --second-color: #363636;
+  --other-color: #5a5a5a;
   --h1-font: 5.2rem;
   --h2-font: 3.5rem;
   --p-font: 1.1rem;
@@ -81,7 +81,7 @@ section {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: url(../img/project.png);
+  background: url(../img/shoe.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -238,9 +238,9 @@ header.sticky {
 
 .box {
   padding: 45px;
-  background: #020312;
-  border-top: 5px solid transparent;
-  border-radius: 0.5rem;
+  background: white;
+  border: 1px solid black;
+  /* border-radius: 0.5rem; */
   transition: all 0.4s ease;
   cursor: pointer;
 
@@ -304,7 +304,8 @@ header.sticky {
 
 .row img {
   height: auto;
-  border-radius: 0.5rem;
+  width: auto;
+  /* border-radius: 0.5rem; */
   margin-bottom: 1.5rem;
 }
 
@@ -314,8 +315,8 @@ header.sticky {
 
 .row {
   padding: 25px;
-  background: #020312;
-  border-radius: 0.5rem;
+  border: solid 1px black;
+  /* border-radius: 0.5rem; */
   transition: all 0.4s ease;
 }
 
@@ -434,17 +435,19 @@ form textarea {
   outline: none;
   width: 100%;
   padding: 18px;
-  background: #020312;
+  /* background: #020312; */
+  border: solid 1px black;
   color: var(--text-color);
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
 }
 
 .contact-form textarea {
   resize: none;
   height: 220px;
+  border: solid 1px black;
 }
 
 .contact-form form .send {
@@ -520,7 +523,7 @@ form textarea {
 
   .home {
     height: 85vh;
-    background-image: url("../img/project.png");
+    background-image: url("../img/shoe.png");
   }
 
   .about {
@@ -549,7 +552,7 @@ form textarea {
     left: 0;
     display: flex;
     flex-direction: column;
-    background: #020312;
+    background: #ffffff;
     text-align: left;
     transition: all 0.4s ease;
   }
