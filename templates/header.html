@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Erkam Esen</title>
+  <!---custom css link--->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}" />
+
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!---header--->
+  <header>
+    
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+      <li><a href="http://127.0.0.1:5000/#home">Home</a></li>
+      <li><a href="http://127.0.0.1:5000/#about">About</a></li>
+      <li><a href="http://127.0.0.1:5000/#services">Services</a></li>
+      <li><a href="http://127.0.0.1:5000/#portfolio">Projects</a></li>
+      <li><a href="http://127.0.0.1:5000/#contact">Contacts</a></li>
+      {% if is_active  %}
+      <li><a href="{{ url_for('admin.logout')}}">Logout</a></li>
+      <li><a href="{{ url_for('project.create_project')}}">Add Project</a></li>
+      <li><a href="{{ url_for('service.add_service')}}">Add Service</a></li>
+      {%  endif  %}
+      
+    </ul>
+  </header>
